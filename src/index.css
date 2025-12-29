@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Tour */
+
+.tour-card {
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.tour-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Image fix */
+.img-wrapper {
+  height: 220px;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.tour-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Typography */
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+
+/* Section background */
+.contact-section {
+  padding: 80px 0;
+  background-color: #f5f6f8;
+}
+
+/* Card container */
+.contact-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* LEFT SIDE */
+.form-side {
+  padding: 50px;
+}
+
+.form-side h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+/* Inputs */
+.form-side input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.form-side input:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+
+/* Option cards */
+.option {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option strong {
+  display: block;
+}
+
+.option span {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.option.active {
+  border-color: #0d6efd;
+  background-color: #f0f6ff;
+}
+
+/* RIGHT SIDE */
+.image-side {
+  position: relative;
+  background-image: url("/Tour-app/src/assets/img1.jpg"); 
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+}
+
+/* Dark overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+/* Text on image */
+.image-text {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  color: #fff;
+}
+
+.image-text h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
