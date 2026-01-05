@@ -1,4 +1,4 @@
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "./serviceCard";
 import "./services.css";
 
 import { GiParachute, GiMountainClimbing, GiCycling, GiPartyPopper, GiSailboat } from "react-icons/gi";
